@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: antiquewhite;
+
+}
+
+.heading {
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+img {
+    max-height: 50vh; /* Adjust the value as needed */
+    width: 100%; /* Ensures the image maintains its aspect ratio */
+}
+
+.heroimg {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+
+}
+
+.button-community {
+        text-align: left; /* Align the button to the left */
+        padding-left: 20px; /* Adjust the padding as needed */
+    }
+
+
+    
