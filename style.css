@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: antiquewhite;
+
+}
+
+
+
+img {
+    max-height: 50vh; /* Adjust the value as needed */
+    width: 100%; /* Ensures the image maintains its aspect ratio */
+}
+
+.heroimg {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    max-width: 25rem;
+
+}
+
+.button-community {
+        text-align: left; /* Align the button to the left */
+        padding-left: 20px; /* Adjust the padding as needed */
+    }
+
+   
+
+.heading_event {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+
+.events {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.event_image {
+    width: 25rem;
+    height: 16rem;
+}
+
+.heading {
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.colleagues_image {
+    width: 25rem;
+    height: 16rem;
+    
+}
+
+
