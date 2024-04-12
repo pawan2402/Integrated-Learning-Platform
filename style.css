@@ -6,14 +6,11 @@ body {
 .navbar {
     width: 100%;
     background-color: antiquewhite;
-
 }
 
-
-
 img {
-    max-height: 50vh; /* Adjust the value as needed */
-    width: 100%; /* Ensures the image maintains its aspect ratio */
+    max-height: 50vh; 
+    width: 100%; 
 }
 
 .heroimg {
@@ -28,7 +25,6 @@ img {
     transform: translate(-50%,-50%);
     padding: 20px;
     max-width: 25rem;
-
 }
 
 .button-community {
@@ -44,29 +40,44 @@ img {
 }
 
 
-.events {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.event_image {
-    width: 25rem;
-    height: 16rem;
-}
-
 .heading {
     margin-bottom: 1rem;
     margin-top: 4rem;
     margin-left: 2rem;
 }
 
-.colleagues_image {
-    width: 25rem;
-    height: 16rem;
-    
+
+
+.flexsection {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
 }
 
 
+.flexsection1 {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.nope {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    font-weight: bold;
+
+}
+
+footer {
+    height: 200px;
+}
