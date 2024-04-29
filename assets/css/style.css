@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ++++++++++++++++++++++++++ */
+/* ++++++ navbar style ++++++ */
+/* ++++++++++++++++++++++++++ */
+
+.navbar {
+    padding: 10px 80px;
+}
+
+.navbar .navLogo {
+    display: flex;
+    align-items: center;
+}
+
+.navLogo>img {
+    width: 50px;
+    margin: 0px 20px;
+}
+
+.navLogo>p {
+    margin: 0px 100px 0px 0px;
+    font-weight: 900;
+}
+
+/* Navbar Navigation */
+.navbar>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar>ul li {
+    list-style-type: none;
+}
+
+.navbar>ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navbar Searchbar */
+.navSearchBar {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.navSearchBar input,
+.navSearchBar input:focus {
+    width: 340px;
+    margin: 0px 0px 0px 20px;
+    border: 0px;
+    outline: 0px;
+}
+
+/* Navbar Dropdown */
+.navDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navDropBtn {
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.navDropBtn img {
+    width: 18px;
+}
+
+.navDropdownList {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navDropdownList a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navDropdownList a:hover {
+    background-color: #f1f1f1;
+}
+
+.btnLogInSignUp {
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++ Index Hero Section Started ++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++ */
+
+
+.indexHeroSection img {
+    width: 100vw;
+    height: 92.5vh;
+}
+
+.indexHeroSectionContent {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+}
+
+.indexHeroSectionContent h1 {
+    font-size: 60px;
+}
+
+.indexHeroSectionContent p {
+    width: 440px;
+    font-size: 20px;
+    margin: 40px 0px;
+}
+
+.indexHeroButton button {
+    padding: 10px 20px;
+    margin: 0px 20px 0px 0px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++ Index Services Section Started ++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+.indexServicesSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+}
+
+.indexServicesCards {
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    padding: 40px 80px;
+    background-color: #F5F5F5;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.indexServicesCards h3 {
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.indexServicesCards p {
+    font-size: 16px;
+    margin: 10px 0px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.indexServicesCards img {
+    width: 100px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++ Index About Section Started ++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++ */
+.indexAboutSection {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.indexAboutImg {
+    padding: 20px 40px;
+}
+
+.indexAboutImg img {
+    width: 500px;
+    aspect-ratio: 2.5/2;
+    object-fit: cover;
+}
+
+.indexAboutPara {
+    padding: 0px 40px;
+}
+
+.indexAboutPara h3 {
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.indexAboutPara p {
+    margin: 20px 400px 20px 0px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++ Index Courses Section Started ++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+.indexCoursesSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px;
+}
+
+.indexCoursesSection b {
+    margin: 80px 0px;
+}
+
+
+
+.indexCoursesImg {
+    display: flex;
+}
+
+.indexCoursesImg img {
+    width: 200px;
+    border-radius: 10px;
+}

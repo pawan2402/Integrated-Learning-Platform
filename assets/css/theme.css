@@ -1,0 +1,31 @@
+/* Purple Background */
+.bgColorPurple {
+    background-color: #A020F0;
+    color: #FFF;
+    border: 1px solid #A020F0;
+    transition: 0.4s ease;
+}
+
+.bgColorTransparent {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #A020F0;
+    transition: 0.4s ease;
+}
+
+.bgColorPurple:hover {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #A020F0;
+}
+
+.bgColorTransparent:hover {
+    background-color: #A020F0;
+    color: #FFF;
+    border: 1px solid #A020F0;
+}
+
+/* Purple Text */
+.textColorPurple {
+    color: #B558F1;
+}

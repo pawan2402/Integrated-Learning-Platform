@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <section>
+        <!-- ================================== -->
+        <!-- ===== Navbar Section Started ===== -->
+        <!-- ================================== -->
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <div class="navLogo">
+                        <img src="assets/icons/logo.png" alt="">
+                        <p>SUPER LEARNING</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="navSearchBar bgColorTransparent">
+                        <img src="assets/icons/search.svg" alt="">
+                        <input type="search" placeholder="Search...">
+                    </button>
+                </li>
+                <li>
+                    <div class="navDropdown">
+                        <button onclick="toggleNavDropdownCourses()" class="navDropBtn">
+                            <p>Courses</p>
+                            <img src="assets/icons/chevron-down.svg" alt="">
+                        </button>
+                        <div id="navDropdownCourses" class="navDropdownList">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="navDropdown">
+                        <button onclick="toggleNavDropdownResources()" class="navDropBtn">
+                            <p>Resources</p>
+                            <img src="assets/icons/chevron-down.svg" alt="">
+                        </button>
+                        <div id="navDropdownResources" class="navDropdownList">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <div class="navDropdown">
+                        <button onclick="toggleNavDropdownLanguages()" class="navDropBtn">
+                            <p>EN</p>
+                            <img src="assets/icons/chevron-down.svg" alt="">
+                            <img src="assets/icons/earth.svg" alt="">
+                        </button>
+                        <div id="navDropdownLanguages" class="navDropdownList">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <button class="btnLogInSignUp bgColorTransparent">Log In</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <button class="btnLogInSignUp bgColorPurple">Sign Up</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- =================================== -->
+        <!-- ===== Navbar Section Collapse ===== -->
+        <!-- =================================== -->
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

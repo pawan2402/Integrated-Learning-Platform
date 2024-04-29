@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
-    
+    <section>
+        <!-- ================================== -->
+        <!-- ===== Navbar Section Started ===== -->
+        <!-- ================================== -->
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <div class="navLogo">
+                        <img src="assets/icons/logo.png" alt="">
+                        <p>SUPER LEARNING</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="navSearchBar bgColorTransparent">
+                        <img src="assets/icons/search.svg" alt="">
+                        <input type="search" placeholder="Search...">
+                    </button>
+                </li>
+                <li>
+                    <div class="navDropdown">
+                        <button onclick="toggleNavDropdownCourses()" class="navDropBtn">
+                            <p>Courses</p>
+                            <img src="assets/icons/chevron-down.svg" alt="">
+                        </button>
+                        <div id="navDropdownCourses" class="navDropdownList">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="navDropdown">
+                        <button onclick="toggleNavDropdownResources()" class="navDropBtn">
+                            <p>Resources</p>
+                            <img src="assets/icons/chevron-down.svg" alt="">
+                        </button>
+                        <div id="navDropdownResources" class="navDropdownList">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <div class="navDropdown">
+                        <button onclick="toggleNavDropdownLanguages()" class="navDropBtn">
+                            <p>EN</p>
+                            <img src="assets/icons/chevron-down.svg" alt="">
+                            <img src="assets/icons/earth.svg" alt="">
+                        </button>
+                        <div id="navDropdownLanguages" class="navDropdownList">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <button class="btnLogInSignUp bgColorTransparent">Log In</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <button class="btnLogInSignUp bgColorPurple">Sign Up</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- =================================== -->
+        <!-- ===== Navbar Section Collapse ===== -->
+        <!-- =================================== -->
+    </section>
+
+    <section>
+        <!-- ================================== -->
+        <!-- ====== Hero Section Started ====== -->
+        <!-- ================================== -->
+        <div class="indexHeroSection">
+            <img src="assets/images/indexHeroSectionBg.jpg" alt="">
+            <div class="indexHeroSectionContent">
+                <h1>
+                    It's time to amplify <br>
+                    your <b class="textColorPurple">Online Career</b>
+                </h1>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humor.
+                </p>
+                <div class="indexHeroButton">
+                    <button class="bgColorPurple">Get Started</button>
+                    <button class="bgColorTransparent">Learn more</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- =================================== -->
+        <!-- ====== Hero Section Collapse ====== -->
+        <!-- =================================== -->
+    </section>
+
+    <section>
+        <!-- ========================================== -->
+        <!-- ===== Services Cards Section Started ===== -->
+        <!-- ========================================== -->
+        <div class="indexServicesSection">
+            <div class="indexServicesCards">
+                <img src="assets/icons/instractor.png" alt="">
+                <h3>Expert Instractor</h3>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humor.
+                </p>
+            </div>
+            <div class="indexServicesCards">
+                <img src="assets/icons/development.png" alt="">
+                <h3>Self Development</h3>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humor.
+                </p>
+            </div>
+            <div class="indexServicesCards">
+                <img src="assets/icons/lifeTimeSupport.png" alt="">
+                <h3>Life Time Support</h3>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humor.
+                </p>
+            </div>
+        </div>
+        <!-- =========================================== -->
+        <!-- ===== Services Cards Section Collapse ===== -->
+        <!-- =========================================== -->
+    </section>
+
+    <section>
+        <!-- ================================= -->
+        <!-- ===== About Section Started ===== -->
+        <!-- ================================= -->
+        <div class="indexAboutSection">
+            <div class="indexAboutImg">
+                <img src="assets/images/indexAboutSectionImg.jpg" alt="">
+            </div>
+            <div class="indexAboutPara">
+                <h3>About</h3>
+                <p>
+                    Super-learning encourages a mindset of continuous improvement and lifelong learning. The process is not just about short-term gains but establishing habits that support ongoing personal and professional development.
+                </p>
+                <p>
+                    Super-learning often involves engaging multiple senses in the learning process. This can include visual, auditory, and kinesthetic elements to create a more immersive and memorable learning experience.
+                </p>
+                <p>
+                    Visualization is a common component of super-learning. Learners are encouraged to create mental images or diagrams to help reinforce concepts and information, making it easier to recall later.
+                </p>
+            </div>
+        </div>
+        <!-- ================================== -->
+        <!-- ===== About Section Collapse ===== -->
+        <!-- ================================== -->
+    </section>
+
+    <section>
+        <!-- =================================== -->
+        <!-- ===== Courses Section Started ===== -->
+        <!-- =================================== -->
+        <div class="indexCoursesSection">
+            <div class="indexCoursesPara">
+                <b class="textColorPurple">EXPLORE OUR COURSES</b>
+                <h3>
+                    Get Instant Access To <br>
+                    Expert Solution
+                </h3>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words that don't look even slightly believable. If you are going to use a passage from Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of the text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                </p>
+                <button class="bgColorPurple">EXPLORE COURSES</button>
+            </div>
+            <div class="indexCoursesImg">
+                <img src="assets/images/indexAboutImg1.jpg" alt="">
+                <img src="assets/images/indexAboutImg2.jpg" alt="">
+                <img src="assets/images/indexAboutImg3.jpg" alt="">
+                <img src="assets/images/indexAboutImg4.jpg" alt="">
+            </div>
+        </div>
+        <!-- ==================================== -->
+        <!-- ===== Courses Section Collapse ===== -->
+        <!-- ==================================== -->
+    </section>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
