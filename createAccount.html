@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    font-size: 16px;
+    color: #777;
+    font-family: sans-serif;
+    font-weight: 300;
+    height: 100%;
+    width: 100;
+  }
+
+  #login-box {
+    margin: 5% auto;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .left-box {
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+  }
+
+  input[type="submit"] {
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.25s ease;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    background: #ff5722;
+    transition: 0.2s ease;
+  }
+</style>
+
+<body>
+
+    <div class="left-box">
+      <h1> Sign Up </h1>
+      <input required type="text" name="username" placeholder="Username" />
+      <input type="text" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="password" name="password2" placeholder="Retype Password" required />
+      <input type="text" name="otp" placeholder="OTP" required />
+      <input type="submit" name="singup-button" placeholder="Sing Up" />
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+<script>
+
+
+  var notyf = new Notyf();
+  var otpid = "";
+
+
+  var usernameInput = document.querySelector('input[name="username"]');
+  var emailInput = document.querySelector('input[name="email"]');
+  var passwordInput = document.querySelector('input[name="password"]');
+  var retypePasswordInput = document.querySelector('input[name="password2"]');
+  var submitButton = document.querySelector('input[name="singup-button"]');
+  var otp = document.querySelector('input[name="otp"]');
+  otp.style.display = 'none';
+
+  var username = usernameInput.value;
+  var email = emailInput.value;
+  var password = passwordInput.value;
+  var retypePassword = retypePasswordInput.value;
+  var count = 0;
+
+
+  function send() {
+    username = usernameInput.value;
+    email = emailInput.value;
+    password = passwordInput.value;
+    retypePassword = retypePasswordInput.value;
+    if (username.length < 2 || email.length < 2 || password.length < 2) {
+      return notyf.error("All fields must be filled");
+    }
+    if (password != retypePassword) {
+      return notyf.error("Passwords do not match");
+    }
+    notyf.success('please Wait...');
+    const ans = fetch('https://backend-integrated-learning-platform.onrender.com/sendotp', {
+      method: 'POST',
+      mode: 'cors',
+      credentials: 'include',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
+      body: JSON.stringify({ email: email })
+    }).then(response => response.json())
+      .then(result => {
+        if (result.success) {
+          notyf.success(result.message);
+          otp.style.display = 'block';
+          usernameInput.readOnly = true;
+          emailInput = true;
+          passwordInput = true;
+          retypePasswordInput = true;
+          count = 1;
+          otpid = result.otpid;
+        }
+        else {
+          notyf.error(result.message);
+        }
+      })
+  }
+
+
+
+  function verify() {
+    const val = otp.value;
+    if (val.length > 3) {
+      notyf.success('please Wait...');
+      const ans = fetch('https://backend-integrated-learning-platform.onrender.com/verifyotp', {
+        method: 'POST',
+        mode: 'cors',
+        credentials: 'include',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        },
+        body: JSON.stringify({ email: email, password: password, username: username, userotp: val, id: otpid })
+      }).then(response => response.json())
+        .then(result => {
+          if (result.success) {
+            localStorage.setItem('user', result.id);
+            notyf.success(result.message);
+            window.location.href = "./index.html";
+          }
+          else {
+            notyf.error(result.message);
+          }
+        })
+    }
+    else {
+      notyf.error('Please enter a valid OTP');
+      return;
+    }
+  }
+
+
+
+  submitButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (count == 0) {
+      send();
+    }
+    else {
+      verify();
+    }
+  });
+
+
+</script>
+
+</html>
