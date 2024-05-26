@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/courses-details.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 </head>
 
 <body>
-    <Sec>
+    <section>
         <!-- ================================== -->
         <!-- ===== Navbar Section Started ===== -->
         <!-- ================================== -->
@@ -75,12 +77,12 @@
                 </li>
                 <li>
                     <div>
-                        <button class="btnLogInSignUp bgColorTransparent">Log In</button>
+                        <button onclick="window.location.href = './login.html' " class="btnLogInSignUp bgColorTransparent">Log In</button>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <button class="btnLogInSignUp bgColorPurple">Sign Up</button>
+                        <button onclick="window.location.href = './createAccount.html' " class="btnLogInSignUp bgColorPurple">Sign Up</button>
                     </div>
                 </li>
             </ul>
@@ -89,6 +91,7 @@
         <!-- ===== Navbar Section Collapse ===== -->
         <!-- =================================== -->
     </section>
+
 
     <section class="spaceAsideForSection">
         <!-- ================================== -->
@@ -102,7 +105,7 @@
                 </div>
                 <div class="heroSectionImgDescription">
                     <h1>Advanced Motion Graphics Design Mastery In Adobe After Effects</h1>
-                    <p class="heroSectionImgDescriptionlorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore sunt voluptatibus ea et accusamus explicabo quam nisi eaque, consectetur quae facilis officiis .</p>
+                    <p class="heroSectionImgDescriptionpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore sunt voluptatibus ea et accusamus explicabo quam nisi eaque, consectetur quae facilis officiis .</p>
                 </div>
                 <div class="heroSectionImageUserRate">
                     <div class="heroSectionImageUser">
@@ -121,76 +124,161 @@
                         <p>4.7 ⭐⭐⭐⭐ (<u>4602 Rating</u>)</p>
                     </div>
                 </div>
-
-
             </div>
+           
             <div class="heroSectionSideMenu">
-                <div class="heroSectionSideMenuPrice">$95.USD</div>
-                <div>
-                <div class="heroSectionSideMenuDetails">
-                    <ul>
-                        <li class="heroSectionSideMenuDetailsBold">Instructor</li>
-                        <li>Dane Home</li>
-                    </ul>
-                </div>
-                <div class="heroSectionSideMenuDetails">
-                    <ul>
-                        <li class="heroSectionSideMenuDetailsBold">Duration</li>
-                        <li>12 hr 15 mins</li>
-                    </ul>
-                </div>
-                <div class="heroSectionSideMenuDetails">
-                    <ul>
-                        <li class="heroSectionSideMenuDetailsBold">Lectures</li>
-                        <li>35</li>
-                    </ul>
-                </div>
-                <div class="heroSectionSideMenuDetails">
-                    <ul>
-                        <li class="heroSectionSideMenuDetailsBold">Level</li>
-                        <li>Advanced</li>
-                    </ul>
-                </div>
-                <div class="heroSectionSideMenuDetails">
-                    <ul>
-                        <li class="heroSectionSideMenuDetailsBold">Language</li>
-                        <li>English</li>
-                    </ul>
-                </div>
-                <div class="heroSectionSideMenuDetails">
-                    <ul>
-                        <li class="heroSectionSideMenuDetailsBold">Certificate</li>
-                        <li>Yes</li>
-                    </ul>
-                </div>
-                </div>
-                <div class="heroSectionSideMenuEnrollBtn">
-                    <button type="button"> Enroll Now</button>
-                </div>
+                    <div class="heroSectionSideMenuPrice">$95.USD</div>
+                        <div>
+                    <div class="heroSectionSideMenuDetails border">
+                        <ul>
+                            <li class="heroSectionSideMenuDetailsBold"><i class="fa-solid fa-user-tie"></i>Instructor</li>
+                            <li>Dane Home</li>
+                        </ul>
+                    </div>
+                    <div class="heroSectionSideMenuDetails">
+                        <ul>
+                            <li class="heroSectionSideMenuDetailsBold"><i class="fa-regular fa-clock"></i>Duration</li>
+                            <li>12 hr 15 mins</li>
+                        </ul>
+                    </div>
+                    <div class="heroSectionSideMenuDetails">
+                        <ul>
+                            <li class="heroSectionSideMenuDetailsBold"><i class="fa-solid fa-clapperboard"></i>Lectures</li>
+                            <li>35</li>
+                        </ul>
+                    </div>
+                    <div class="heroSectionSideMenuDetails">
+                        <ul>
+                            <li class="heroSectionSideMenuDetailsBold"><i class="fa-solid fa-chart-column"></i>Level</li>
+                            <li>Advanced</li>
+                        </ul>
+                    </div>
+                    <div class="heroSectionSideMenuDetails">
+                        <ul>
+                            <li class="heroSectionSideMenuDetailsBold"><i class="fa-solid fa-language"></i>Language</li>
+                            <li>English</li>
+                        </ul>
+                    </div>
+                    <div class="heroSectionSideMenuDetails">
+                        <ul>
+                            <li class="heroSectionSideMenuDetailsBold"><i class="fa-regular fa-newspaper"></i>Certificate</li>
+                            <li>Yes</li>
+                        </ul>
+                    </div>
+                        </div>
+                    <div class="heroSectionSideMenuEnrollBtn">
+                        <button type="button"> Enroll Now</button>
+                    </div>                
             </div>
             
         </div>
-
+        <div class="heroSectionparttwo">
+            <div class="heroSectionparttwodetails">
+                <ul  class="heroSectionMenu">
+                    <li><button>Description</button> </li>
+                    <li><button>Instructor</button> </li>
+                    <li><button>Curriculam</button> </li>
+                    <li><button>Reviews</button> </li>
+                    
+                </ul>
+            </div>
+            <div class="heroSectionCourseshare">
+                <div class="heroSectionShareName">Share Course:</div>
+                <div class="heroSectionshareBtn">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i> </li>
+                        <li><i class="fa-brands fa-linkedin"></i> </li>
+                        <li><i class="fa-brands fa-x-twitter"></i> </li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- ================================== -->
-        <!-- ===== Hero Sec Collapsed ===== -->
+        <!-- ===== Hero Section Collapsed ===== -->
+        <!-- ================================== -->
+    </Section>
+
+    <Section class="spaceAsideForSection">
+        <!-- ================================== -->
+        <!-- ===== Content Section Started ===== -->
+        <!-- ================================== -->
+
+        <div class="mainContent">
+            <div class="bodyParagraph">
+            <div class="bodyParagraphDesc para">
+                <h2 class="topic">Description:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium eveniet unde eos officia corrupti aliquam provident soluta vel exercitationem voluptatum eius laudantium rerum illum <br /><br /> repudiandae assumenda, vitae laborum aspernatur maxime.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate enim nemo fugiat earum distinctio fugit doloremque veritatis, expedita, impedit beatae ex quae? Sapiente, culpa reiciendis. Voluptatem velit tempore quia? Libero voluptate, obcaecati recusandae aperiam temporibus, fugit quaerat, quas sapiente quasi eos vel repudiandae consequatur. Dignissimos maiores id dolore. Earum itaque modi omnis debitis maxime, explicabo quas quisquam eos doloribus.</p>
+            </div>
+            <div class="bodyParagraphInst para">
+                <h2 class="topic">Instructors:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium eveniet unde eos officia corrupti aliquam provident soluta vel exercitationem voluptatum eius laudantium rerum illum  repudiandae assumenda, vitae laborum aspernatur maxime.
+                 quia? Libero voluptate, obcaecati recusandae aperiam temporibus, fugit quaerat, quas sapiente quasi eos vel repudiandae consequatur. Dignissimos maiores id dolore. Earum itaque modi omnis debitis maxime, explicabo quas quisquam eos doloribus.</p>
+            </div>
+            <div class="bodyParagraphCurr para">
+                <h2 class="topic">Curriculum:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium eveniet unde eos officia corrupti aliquam provident soluta vel exercitationem voluptatum eius laudantium rerum illum  repudiandae assumenda, vitae laborum aspernatur maxime.
+                 quia? Libero voluptate, obcaecati recusandae aperiam temporibus, fugit quaerat, quas sapiente quasi eos vel repudiandae consequatur. Dignissimos maiores id dolore. Earum itaque modi omnis debitis maxime, explicabo quas quisquam eos doloribus.</p>
+            </div>
+            </div>
+
+            <div class="studentsFeed">
+                <p>Enroll Student's <span>Feedback</span></p>
+                <!-- -------- the slider will be made here ----------- -->
+                <!-- -------- the slider will be made here ----------- -->
+                <!-- -------- the slider will be made here ----------- -->
+                <div></div>
+            </div>                        
+            <div class="mainContentInputSec">
+                <h2>Leave a Comment:</h2>
+                
+                <div>
+                    <div class="form-container">
+                        <form>
+                          <div class="row">
+                            <div class="col">
+                              <!-- <label for="fullname">Full Name:</label> -->
+                              <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                            </div>
+                            <div class="col">
+                              <!-- <label for="email">Email:</label> -->
+                              <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                          </div>
+                    
+                          <div class="row">
+                            <div class="col-full">
+                              <!-- <label for="subject">Subject:</label> -->
+                              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                    
+                          <!-- <label for="message">Message:</label> -->
+                          <textarea id="message" name="message" placeholder="Your message"  required></textarea>
+                    
+                          <button type="submit" class="bgColorTransparent">Write a Review</button>
+                        </form>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <!-- ================================== -->
+        <!-- ===== Content Section Started ===== -->
         <!-- ================================== -->
     </Section>
 
     <Section>
         <!-- ================================== -->
-        <!-- ===== Content Sec Started ===== -->
-        <!-- ================================== -->
-    </Section>
-
-    <Section>
-        <!-- ================================== -->
-        <!-- ===== Footer Sec Started ===== -->
+        <!-- ===== Footer Section Started ===== -->
         <!-- ================================== -->
     </Section>
     <script src="assets/js/script.js"></script>
-
-    <div style="height: 200px;">
-    </div>
+    
 </body>
 
 </html>

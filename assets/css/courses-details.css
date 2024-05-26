@@ -1,140 +1,322 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.spaceAsideForSection{
-    padding: 0 70px;
-}
-
-.heroSection {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    /* width: 1000px; */
-    /* padding: 0 70px; */
-    margin-top: 60px;
-}
-
-.heroSectionImgDescriptionlorem {
-    padding:5px 0;    
-    width: 600px;
-    font-size: 12px;
-    /* line-height: 10px; */
-}
-
- 
-
- .heroSectionImage  img {
-    height: 500px;
-    margin-bottom: 30px;    
-    border-radius: 20px;
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
     
- }
+    body {
+        background-color: #F5F5F5;
+    }
 
+    /* Reset margins and paddings for ul and li inside the navbar */
+    .navbar ul, .navbar li {
+        margin: 0;
+        padding: 0;
+    }
 
- .heroSectionImgDescription  h1 {
-    font-weight: bold;
-    font-size: 180%;
-    padding-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
- .heroSectionImageUserRate {
-    padding: 15px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
- }
- .heroSectionImageUserRating  {
-    font-size: 120%;
- }
-
- .heroSectionImageUserName {
-    font-size: large;
-    font-weight: 800;
- }
- 
-.heroSectionImageLine {
-    font-size: 120%;
-}
-
-.heroSectionImageUser {
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-.heroSectionEnrollNumber {
-    color: #A020F0;
-    font-size: 120%;
-}
-
-.heroSectionSideMenuDetails ul {
-    /* padding: 0 30px; */
-    margin:0 30px;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: space-between  ;
-    /* align-content: center; */
-    flex-direction: row;
-    border-bottom: 2px solid black;
-} 
-
-.heroSectionSideMenuPrice {
-    text-align: center;
-    padding:30px 0;
-    font-size: 30px;
-    font-weight: 750;
-    color: #A020F0;
-}
-
-/* .heroSectionSideMenuDetails {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-} */
-
-
-.heroSectionSideMenuEnrollBtn {
-    text-align: center;
-    margin-top: 20px;
-}
-.heroSectionSideMenu {
-    background-color: antiquewhite;
-    width: 400px;
-    /* height: 100vh; */
-    display: flex; /* Added display: flex */
-    flex-direction: column; /* Changed flex-direction to column */
-    /* justify-content: space-between; */
-    /* align-content: center; */
-    /* gap: 200px; */
-    border-radius: 20px;
- }
-
-.heroSectionSideMenuEnrollBtn button{
-    background-color: #A020F0;
-    color: #FFF;
-    border: 1px solid #A020F0;
-    transition: 0.4s ease;
-    padding: 15px;
-    font-size: large;
-    border-radius: 10px;
-    width: 140px;
     
-}
+    /* ------------Space from left & right  */
+    .spaceAsideForSection{
+        padding: 0 70px;
+    }
 
-li {
-    list-style: none; 
-    margin-top: 30px; /* Adjust the gap between list items */
-}
+    /* ++++++++++++++++++++++++++++++++++++++++ */
+    /* ++++++ Hero Section Started ++++++ */
+    /* ++++++++++++++++++++++++++++++++++++++++ */
 
-.heroSectionSideMenuDetailsBold {
-    font-weight: bold;
-}
 
+    .heroSection {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    /* Main image of hero section part  */
+
+    /* Adjusting main image */
+    .heroSectionImage  img { 
+        height: 500px;
+        margin-bottom: 30px;    
+        border-radius: 20px;
+    }
+
+
+    .heroSectionImgDescriptionpara {
+        padding:5px 0;    
+        width: 600px;
+        font-size: 12px;
+    }
+
+    .heroSectionImgDescription  h1 {
+        font-weight: bold;
+        font-size: 180%;
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .heroSectionImageUserRate {
+        padding: 15px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .heroSectionImageUserRating  {
+        font-size: 120%;
+    }
+
+    .heroSectionImageUserName {
+        font-size: large;
+        font-weight: 800;
+    }
+    
+    .heroSectionImageLine {
+        font-size: 120%;
+    }
+
+    .heroSectionImageUser {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .heroSectionEnrollNumber {
+        color: #A020F0;
+        font-size: 120%;
+    }
+
+
+    /* right side of hero section - details part  */
+    .heroSectionSideMenuDetails ul {
+        margin:0 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between  ;
+        flex-direction: row;
+        border-bottom: 3px solid grey;
+    } 
+
+    /* for the boder of the first item in side menu "instracutor" */
+    .heroSectionSideMenuDetails.border ul{
+        border-top: 3px solid  gray;
+    }
+
+    .heroSectionSideMenuDetails ul li i {
+        margin-right: 5px;
+    }
+
+    
+    .heroSectionSideMenuPrice {
+        text-align: center;
+        padding:30px 0;
+        font-size: 30px;
+        font-weight: 750;
+        color: #A020F0;
+    }
+
+    .heroSectionSideMenuEnrollBtn {
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    .heroSectionSideMenu {
+        background-color: #d8d6dacb;
+        /* background-color: #FEDEFF; */
+        width: 400px;
+        display: flex; 
+        flex-direction: column;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+    }
+
+    .heroSectionSideMenuEnrollBtn button{
+        background-color: #A020F0;
+        color: #FFF;
+        border: 1px solid #A020F0;
+        transition: 0.4s ease;
+        padding: 15px;
+        font-size: large;
+        border-radius: 10px;
+        width: 140px;
+        
+    }
+
+    li {
+        list-style: none; 
+        margin-top: 30px;
+    }
+
+    .heroSectionSideMenuDetailsBold {
+        font-weight: bold;
+    }
+
+    /* /* ----------hero Section part two ------- */
+    
+
+    .heroSectionparttwo {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin: 40px 0 ;
+    }
+
+    .heroSectionMenu {
+        display: flex;   
+        flex-direction: row;
+        justify-content: space-between;
+        /* color: #A020F0; */
+        margin: 15px ;
+        margin-left: 90px;
+    }
+    
+    .heroSectionparttwodetails {
+        background-color: #d8d6dacb;
+        padding-right: 108px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroSectionMenu li  button{
+        padding: 15px;
+        width: 120%;
+        font-size: 20px;
+        border-radius: 7px;
+        color: black;
+        border: 0;
+        background-color: white;
+    }
+
+    .heroSectionMenu li {
+        margin:0 20px;
+        margin-top: 5px;
+        padding: 0 5px;
+
+    }
+    
+    .heroSectionCourseshare {
+        display: flex;
+        flex-direction: column;
+        padding-right: 200px;
+        align-items: self-start;
+        align-content: center   ;
+    } 
+
+    .heroSectionShareName {
+        margin-bottom: -15px; /* Adjust this value to control the gap */
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: 750;
+    }
+
+    .heroSectionshareBtn ul{
+        display: flex;   
+        flex-direction: row;
+        justify-content: space-evenly;
+    }  
+
+    .heroSectionshareBtn ul li {
+        padding-right: 15px;
+        font-size: 25px;
+    }
+    
+    /* <!-- ================================== -->
+    <!-- ===== Content Section Started ===== -->
+    <!-- ================================== --> */
+
+
+    /* --------three paraphrahs---------  */
+    .bodyParagraph {
+        width: 888px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .topic {
+        margin: 20px 0;
+        font-weight: 600;
+    }
+    
+    /* -----------students part---------- */
+    .studentsFeed p {
+        color: #2C4E80;
+        font-size: 30px;
+        font-weight: 100;
+        margin-bottom: 30px ;
+    }
+    
+    .studentsFeed span {
+        font-weight: 700;
+    }
+
+
+    /* ------------form-------- */
+      .form-container {
+        max-width: 800px;
+        padding-top: 20px;
+      }
+            
+      
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      textarea {
+        height: 100px;
+        resize: vertical;
+      }
+      
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .col {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .col-full {
+        grid-column: span 2; /* Make the subject input take full width */
+      }
+      
+      .form-container button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #A020F0;
+        color: white;
+        cursor: pointer;
+        max-width: 150px;
+      }
+      
+      .form-container button:hover {
+        background-color: #A020F0;
+      }
+    
 
